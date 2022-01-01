@@ -1,32 +1,11 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(162, 206, 235);
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  left: 16%;
+  left: 17%;
   right: 0;
   height: 100%;
 }
-
-.background {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-
-  
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 90%;
-}
-
-img {
-  border-radius: 30%
-}
-
 
 h1 {
   text-align: center;
@@ -36,32 +15,47 @@ p {
   text-align: center;
 }
 
-.container {
-  margin: 0; 
-  padding: 0; 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;
 }
 
-.intro-content { 
+.navopt{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;
+  
+}
+
+.intro { 
   flex: 4;
   height: 100%;
   text-align: center;
-  z-index: 7;
-
+  z-index: 2;
+  position: absolute;
+  left: 50px;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
 }
 
-.intro-background {
-  background-image: url("images/lehigh.png");
-  z-index: auto;
-  opacity: 0.5;
+.background {
+  /*opacity: 0.7;
   height: 100%;
-  margin: 0; 
-  padding: 0; 
+  background-image: url("images/lehigh1.png");
+  background-repeat: no-repeat;
+  width: 100%;*/
 }
 
-.sidenav {
+#sidenav {
   flex: 1;
   background-color: white; 
-  z-index: 1;
   top: 0;
   left: 0;
   position: fixed; /*fixed sidebar*/
@@ -71,3 +65,26 @@ p {
   padding: 1%;
 }
 
+#me {
+  border-radius: 30%
+}
+
+#lehigh {
+  object-fit: contain;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  margin: auto;
+  opacity: 0.7;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#container {
+  padding: 0; 
+  margin: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
