@@ -36,14 +36,6 @@ h1 {
   padding: 1%;
 }
 
-.background {
-  /*opacity: 0.7;
-  height: 100%;
-  background-image: url("images/lehigh1.png");
-  background-repeat: no-repeat;
-  width: 100%;*/
-}
-
 .resize{
   width: 6%;
   height: auto;
@@ -75,7 +67,6 @@ h1 {
 }
 
 #intro { 
-  flex: 4;
   z-index: 2;
   position: absolute;
   padding: 0; 
@@ -91,13 +82,15 @@ h1 {
 
 #lehigh {
   text-align: center;
-  position: relative;
-  height: 100%;
-  margin: auto;
   opacity: 0.6;
+  background-repeat: repeat-y;
+  object-fit:cover;
+
   height: 100%;
-  background-repeat: no-repeat;
   width: 100%;
+  padding: 0; 
+  margin: 0;
+  position: absolute;
 }
 
 #container {
