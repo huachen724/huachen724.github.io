@@ -1,12 +1,109 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  background: #020617;
+  color: #e2e8f0;
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
+  background: #020617;
+  color: #e2e8f0;
 }
 
 #root {
-  background-color: #e2e6ef;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page-shell {
+  padding: 0 24px 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-card {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+}
+
+.page-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.contact-card,
+.experience-item,
+.project-card,
+.notfound-card,
+.about-item {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.contact-card h2,
+.experience-item h2,
+.project-card h2,
+.about-item h2 {
+  color: #f8fafc;
+}
+
+.contact-card p,
+.experience-item p,
+.project-card p,
+.about-item p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.notfound-card {
+  text-align: center;
+}
+
+.notfound-card h1 {
+  font-size: 4rem;
+  color: #f8fafc;
+}
+
+@media (max-width: 820px) {
+  .contact-grid,
+  .experience-list,
+  .projects-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+section,
+article,
+main,
+nav {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
 }

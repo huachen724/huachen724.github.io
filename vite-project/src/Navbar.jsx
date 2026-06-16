@@ -4,29 +4,29 @@ import Logo from "../assets/lady_laptop.png";
 
 function Navbar() {
   return (
-    <div className="navbar">
-      {/*<a href="https://github.com/huachen724" target="_blank"><img src="images/github.png" class="resize" alt="Github"></a>
-       */}
-      <NavLink to={"/"} className="logo-container ">
-        <a href="" className="logo"></a>
-        <img src={Logo} alt="" />
+    <nav className="navbar">
+      <NavLink to="/" className="logo-container">
+        <img src={Logo} alt="Hua Chen logo" className="logo-image" />
+        <span className="logo-text">Hua Chen</span>
       </NavLink>
-      <NavLink to={"/"} className="nav-buttons">
-        Home
-      </NavLink>
-      <NavLink to={"experience"} className="nav-buttons">
-        Experience
-      </NavLink>
-      <NavLink to={"projects"} className="nav-buttons">
-        Projects
-      </NavLink>
-      <NavLink to={"contact"} className="nav-buttons">
-        Contact
-      </NavLink>
-      <a href={"*"} className="nav-buttons">
-        NotFound
-      </a>
-    </div>
+      <div className="nav-links">
+        <NavLink to="/" className="nav-button">
+          Home
+        </NavLink>
+        <NavLink to="about" className="nav-button">
+          About
+        </NavLink>
+        <NavLink to="experience" className="nav-button">
+          Experience
+        </NavLink>
+        <NavLink to="projects" className="nav-button">
+          Projects
+        </NavLink>
+        <NavLink to="contact" className="nav-button">
+          Contact
+        </NavLink>
+      </div>
+    </nav>
   );
 }
 

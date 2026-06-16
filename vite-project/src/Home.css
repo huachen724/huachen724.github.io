@@ -1,32 +1,117 @@
-.home {
-  height: 92vh;
-}
-p {
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 10vh;
+.home-page {
+  position: relative;
+  min-height: calc(100vh - 88px);
+  padding-top: 32px;
+  overflow: hidden;
 }
 
-h1 {
-  justify-content: center;
-  display: flex;
-  text-align: center;
+.hero-panel {
+  position: relative;
+  display: grid;
+  gap: 32px;
   align-items: center;
+  grid-template-columns: minmax(220px, 1fr) minmax(280px, 360px);
+  padding: 40px 24px 24px;
+  z-index: 1;
 }
 
-br {
-  justify-content: center;
-  display: flex;
-  align-items: center;
+.hero-copy {
+  max-width: 680px;
 }
 
-.pfp {
-  border-radius: 70px;
+.hero-subtitle {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  color: #f8fafc;
+}
+
+.hero-title span {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  color: #cbd5e1;
+  margin-top: 12px;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  margin: 24px 0 32px;
+  max-width: 640px;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-links a {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
   align-items: center;
-  max-width: 50%;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+}
+
+.hero-links img {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  width: min(100%, 360px);
+  border-radius: 28px;
+  box-shadow: 0 24px 90px rgba(15, 23, 42, 0.16);
+  border: 6px solid rgba(255, 255, 255, 0.95);
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.18;
+  filter: saturate(0.9) brightness(0.95);
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 860px) {
+  .hero-panel {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
 }
