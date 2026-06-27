@@ -13,13 +13,15 @@ function Home() {
         <div className="hero-copy">
           <p className="hero-subtitle">Hi! I'm Hua</p>
           <h1 className="hero-title">
-            Computer Science and Engineering Student
-            <span>at Lehigh University</span>
+            Software Engineer
+            <span>at Wells Fargo</span>
           </h1>
           <p className="hero-description">
-            I build clean, responsive web experiences and love solving practical
-            problems with code. Exploring software engineering, design systems,
-            and real-world applications every day.
+            I build secure, scalable systems — from AI-powered internal
+            tooling to high-availability financial applications. Currently on
+            the Data Intelligence team, working across React, TypeScript, and
+            Python (FastAPI) to ship software that makes engineering teams
+            faster and safer.
           </p>
           <div className="hero-links">
             <a
@@ -39,7 +41,11 @@ function Home() {
             <a href="/hua_chen_resume.pdf" target="_blank" rel="noreferrer">
               <img src={ResumeIcon} alt="Resume" />
             </a>
-            <a href="mailto:huachen724@gmail.com">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=huachen724@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={MailIcon} alt="Email" />
             </a>
           </div>

@@ -14,7 +14,12 @@ function Contact() {
           Reach out via email or connect on LinkedIn.
         </p>
         <div className="contact-grid">
-          <a href="mailto:huachen724@gmail.com" className="contact-card">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=huachen724@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-card"
+          >
             <img src={MailIcon} alt="Email" />
             <div>
               <h2>Email</h2>

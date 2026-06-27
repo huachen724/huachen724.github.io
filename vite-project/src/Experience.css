@@ -1,1 +1,40 @@
 /* Experience page uses shared page-card and list styling from Contact.css */
+
+.experience-page .experience-item {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.experience-page .experience-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.experience-page .experience-period {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.experience-page .experience-meta {
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.experience-page .experience-item ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.experience-page .experience-item li {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
