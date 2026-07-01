@@ -44,7 +44,7 @@ function Projects() {
       <div className="page-card">
         <h1>Projects</h1>
         <p>
-          A mix of personal apps I'm building around League of Legends, and
+          A mix of personal apps I'm building around my hobbies and
           coursework/research projects from college.
         </p>
         <div className="projects-grid">
