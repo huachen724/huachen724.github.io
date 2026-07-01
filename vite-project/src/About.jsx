@@ -10,8 +10,7 @@ function About() {
           building AI-powered tools on the Data Intelligence team at Wells
           Fargo. I’m a Lehigh University alum, and I care about writing
           software that’s secure, well-tested, and pleasant to use. Outside of
-          work, I build side projects around things I’m into — right now,
-          that’s League of Legends.
+          work, I enjoy building side projects around my hobbies!
         </p>
         <div className="about-grid">
           <div className="about-item">
@@ -38,9 +37,10 @@ function About() {
           <div className="about-item">
             <h2>Interests</h2>
             <p>
-              Building side projects around League of Legends, developer
-              tooling and automation, and exploring agentic AI workflows
-              outside of work.
+              Building tools that solve real problems — starting with my own,
+              then shipping them in case they're useful to someone else too.
+              If I find myself thinking "I wish this existed," I'll probably
+              just build it.
             </p>
           </div>
         </div>
