@@ -2,6 +2,14 @@ import "./Projects.css";
 
 const PROJECTS = [
   {
+    title: "汉字卡 (HanziCards)",
+    meta: "Personal Project",
+    description:
+      "A mobile-friendly flashcard app for learning Chinese song lyrics. Paste Traditional or Simplified lyrics and the app segments them into vocabulary units, generates pinyin, and translates each card to English. Tap to flip, swipe to mark known or unknown, with a 3-level hint system that progressively reveals the pronunciation.",
+    tags: ["React", "TypeScript", "Express", "Jieba", "OpenCC"],
+    url: "https://hanzi-cards.onrender.com/",
+  },
+  {
     title: "LoLMate",
     meta: "Personal Project",
     description:
@@ -62,6 +70,11 @@ function Projects() {
                   </span>
                 ))}
               </div>
+              {project.url && (
+                <a href={project.url} target="_blank" rel="noreferrer" className="project-link">
+                  Live demo →
+                </a>
+              )}
             </article>
           ))}
         </div>
