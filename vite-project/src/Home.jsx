@@ -17,11 +17,12 @@ function Home() {
             <span>at Wells Fargo</span>
           </h1>
           <p className="hero-description">
-            I build secure, scalable systems — from AI-powered internal
-            tooling to high-availability financial applications. Currently on
-            the Data Intelligence team, working across React, TypeScript, and
-            Python (FastAPI) to ship software that makes engineering teams
-            faster and safer.
+            Full-stack engineer who loves the craft — I build systems that
+            scale, interfaces that feel effortless, and tools that make other
+            developers faster. Comfortable across the whole stack: React and
+            TypeScript on the front end, Python or Java on the back. I'm drawn
+            to problems where reliability, performance, and good design all
+            matter at once.
           </p>
           <div className="hero-links">
             <a
@@ -51,7 +52,11 @@ function Home() {
           </div>
         </div>
         <div className="hero-visual">
-          <img className="profile-picture" src={ProfilePicture} alt="Hua Chen" />
+          <img
+            className="profile-picture"
+            src={ProfilePicture}
+            alt="Hua Chen"
+          />
         </div>
       </div>
       <div className="hero-background">
