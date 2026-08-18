@@ -15,6 +15,7 @@ const PROJECTS = [
     description:
       "A peer-review platform for League of Legends teammates — Rate My Professor, but for whoever you just got queued with. Search a player to read reviews left by past teammates, or leave one yourself after a game. Can detect when you're heading into a live ranked match and surface reviews for your teammates before the game starts.",
     tags: ["React", "TypeScript", "Express", "PostgreSQL", "Riot API"],
+    url: "https://www.ratemylolmate.com/",
   },
   {
     title: "League Queue History Checker",
